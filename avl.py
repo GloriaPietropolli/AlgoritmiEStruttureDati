@@ -1,12 +1,5 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# ## AVL TREE IMPLEMENTATION
-
+### AVL TREE IMPLEMENTATION
 # Definiamo la classe **node**
-
-# In[2]:
-
 
 class node: 
     def __init__(self, value):
@@ -23,9 +16,6 @@ class node:
 # - Definiamo la funzione __rotateL()__ per ruotare l'albero in senso anti-orario
 # - Definiamo la funzione __insert()__ per inserire un elemento all'interno dell'AVL Tree
 # - Definitamo la funzione __preorder()__ per attraversare l'albero seguendo il preordine
-
-# In[10]:
-
 
 class AVL: 
     def height(self, Node):
@@ -93,54 +83,20 @@ class AVL:
         self.preorder(root.right)
 
 
-# In[11]:
-
-
 Tree = AVL()
-
-
-# In[12]:
-
-
 rt = None
-
-
-# In[13]:
-
 
 rt = Tree.insert(3, rt)
 rt = Tree.insert(5, rt)
 rt = Tree.insert(7, rt)
-
-
-# In[14]:
-
-
 Tree.preorder(rt)
-
-
-# In[15]:
-
-
 rt = Tree.insert(1, rt)
 rt = Tree.insert(2, rt)
 print("PREORDER")
 Tree.preorder(rt)
-
-
-# In[16]:
-
-
 rt = Tree.insert(4, rt)
 rt = Tree.insert(6, rt)
 rt = Tree.insert(8, rt)
 rt = Tree.insert(9, rt)
 print("PREORDER")
 Tree.preorder(rt)
-
-
-# In[ ]:
-
-
-
-
