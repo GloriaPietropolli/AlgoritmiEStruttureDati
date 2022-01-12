@@ -1,13 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# ### TUTORATO 5 : ALGORITMI DI ORDINAMENTO IN TEMPO LINEARE
-
-# ### COUNTING SORT
-
-# In[86]:
-
-
 def counting(A, k):
     B = [0] * k # memoria di lavoro temporanea
     C = [0] * len(A)  # mantiene l'output ordinato
@@ -24,28 +14,12 @@ def counting(A, k):
     return C
 
 
-# In[87]:
-
-
 A = [1, 3, 3, 1, 2, 2, 7, 7, 12, 0, 0]
-
-
-# In[88]:
-
-
 k = max(A) - min(A) + 1
-
-
-# In[89]:
-
-
 counting(A, k)
 
 
 # ### BUCKET SORT
-
-# In[90]:
-
 
 def insertion_sort(A):
     for i in range(1, len(A)):
@@ -54,9 +28,6 @@ def insertion_sort(A):
             A[j], A[j-1] = A[j-1], A[j]
             j = j - 1
     return A
-
-
-# In[91]:
 
 
 def bucket_sort(A):
@@ -75,20 +46,5 @@ def bucket_sort(A):
     return C
 
 
-# In[92]:
-
-
 A = [0.1, 0.3, 0.3, 0.1, 0.2, 0.2, 0.7, 0.7, 0, 0]
-
-
-# In[93]:
-
-
 bucket_sort(A)
-
-
-# In[ ]:
-
-
-
-
