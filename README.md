@@ -1,5 +1,5 @@
 # Algoritmi e Strutture Dati
-__Algoritmi e Strutture Dati tutoring repository @Units__
+__Algoritmi e Strutture Dati tutoring repository. CdL _Intelligenza Artificiale and Data Analytics_ @Units__
 
 This repository contains all the python code implemented during the ASD lessons. 
 Code runs with python 3.8.5 on Ubuntu 20.04, entering the following command: 
